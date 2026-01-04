@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aria’s Brand • Luxury Makeup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root { --primaria: #b0486d; --rose-gold: #e5b3b3; --texto: #3a1f2b; --bg: radial-gradient(circle, #ffffff 0%, #fff0f5 100%); }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; background: var(--bg); background-attachment: fixed; color: var(--texto); line-height: 1.6; }
+        header { background: #fde2eb; text-align: center; padding: 40px 20px; border-bottom: 3px solid var(--rose-gold); }
+        .logo-img { max-width: 200px; height: auto; margin-bottom: 10px; }
+        header h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 10px 0 0 0; color: var(--primaria); letter-spacing: 4px; }
+        section { max-width: 1000px; margin: auto; padding: 20px; }
+
+        /* NOVA SEÇÃO - NOSSA HISTÓRIA */
+        .historia {
+            background: white;
+            border: 2px solid var(--rose-gold);
+            border-radius: 20px;
+            padding: 40px 30px;
+            margin: 40px auto;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(176, 72, 109, 0.1);
+        }
+        .historia h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            color: var(--primaria);
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+        }
+        .historia p {
+            font-size: 1.05rem;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            color: #4a2c3a;
+        }
+        .historia p:last-child { margin-bottom: 0; }
+
+        .owner-box { border: 2px solid var(--rose-gold); padding: 25px; border-radius: 15px; background: white; margin-bottom: 40px; text-align: center; }
+        .categoria-titulo { font-family: 'Playfair Display'; color: var(--primaria); font-size: 2rem; border-bottom: 2px solid var(--rose-gold); margin: 50px 0 25px; padding-bottom: 10px; display: block; text-align: center; }
+        .produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .produto { background: #fff; padding: 20px; border-radius: 20px; text-align: center; border: 1px solid #eee; transition: 0.3s; display: flex; flex-direction: column; justify-content: space-between; }
+        .img-box { width: 100%; height: 280px; border-radius: 15px; overflow: hidden; margin-bottom: 15px; background: #fff; position: relative; display: flex; align-items: center; justify-content: center; }
+        .carousel-container { display: flex; width: 100%; height: 100%; transition: transform 0.5s ease-in-out; }
+        .carousel-container img { min-width: 100%; height: 100%; object-fit: contain; }
+        details { text-align: left; margin: 15px 0; border-top: 1px solid #eee; padding-top: 10px; }
+        summary { cursor: pointer; color: var(--primaria); font-weight: bold; font-size: 0.9rem; list-style: none; text-align: center; outline: none; }
+        .detalhes-texto { font-size: 0.85rem; color: #555; margin-top: 10px; line-height: 1.5; }
+        .preco { display: block; font-weight: bold; font-size: 1.3rem; color: var(--primaria); margin: 10px 0; }
+        .btn { display: inline-block; background: var(--primaria); color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 0.8rem; text-transform: uppercase; transition: 0.3s; cursor: pointer; border:none; }
+        .secao-pix { background: transparent; padding: 40px 20px; border-radius: 20px; border: 2px dashed var(--rose-gold); margin-top: 50px; text-align: center; }
+        .pix-chave { background: white; padding: 15px; border-radius: 10px; font-family: monospace; cursor: pointer; display: block; margin: 20px auto; width: fit-content; border: 1px solid var(--primaria); font-weight: bold; color: var(--primaria); }
+        footer { text-align: center; padding: 50px; background: #3a1f2b; color: #e5b3b3; margin-top: 50px; }
+    </style>
+</head>
+<body>
+<header>
+    <img src="https://i.postimg.cc/PvHDcT2C/Whats-App-Image-2026-01-03-at-17-21-43.jpg" alt="Logo" class="logo-img">
+    <h1>ARIA’S BRAND</h1>
+</header>
+
+<!-- SEÇÃO NOSSA HISTÓRIA -->
+<section class="historia">
+    <h2>Nossa História</h2>
+    <p>
+        Nossa loja nasceu do amor pela beleza, pelo autocuidado e pela confiança que a maquiagem é capaz de despertar. 
+        Aqui, cada produto é escolhido com carinho para valorizar sua essência, realçar sua beleza natural e transformar 
+        o simples ato de se maquiar em um momento especial.
+    </p>
+    <p>
+        Trabalhamos com maquiagens de qualidade, seguindo as tendências do mercado e priorizando marcas confiáveis, 
+        para que você tenha segurança, variedade e resultados incríveis. Mais do que vender produtos, queremos proporcionar 
+        uma experiência: atendimento atencioso, transparência e cuidado em cada detalhe — do pedido à entrega.
+    </p>
+</section>
+
+<section>
+    <div class="owner-box">
+        <h2>Ariane - (35) 99220-136</h2>
+        <p>📦 Pedidos sob encomenda (5 a 7 dias úteis)</p>
+    </div>
+    <span class="categoria-titulo">✨ Perfumes</span>
+    <div class="produtos">
+        <div class="produto">
+            <div class="img-box">
+                <div class="carousel-container carousel-auto" data-index="0">
+                    <img src="https://i.postimg.cc/4m1PX9TS/Whats-App-Image-2026-01-03-at-11-55-46.jpg">
+                    <img src="https://i.postimg.cc/kBys7bdY/Whats-App-Image-2026-01-03-at-11-55-46-(1).jpg">
+                    <img src="https://i.postimg.cc/BL0tZNDM/Whats-App-Image-2026-01-03-at-11-55-46-(2).jpg">
+                </div>
+            </div>
+            <h3>Egeo Dolce Illusion 90ml</h3>
+            <details><summary>📝 Ver Detalhes</summary><div class="detalhes-texto">Sinta o gosto com a tecnologia Smell the Taste*. Notas de Marshmallow Tostado.</div></details>
+            <span class="preco">Consulte Valor</span>
+            <a href="https://wa.me/553599220136" class="btn">Encomendar</a>
+        </div>
+    </div>
+
+    <span class="categoria-titulo">👁️ Olhos & Paletas</span>
+    <div class="produtos">
+        <div class="produto">
+            <div class="img-box">
+                <div class="carousel-container carousel-auto" data-index="0">
+                    <img src="https://i.postimg.cc/RWpDzDrv/Whats-App-Image-2026-01-03-at-17-31-01.jpg">
+                    <img src="https://i.postimg.cc/LqrQJg6c/Whats-App-Image-2026-01-03-at-17-31-00.jpg">
+                </div>
+            </div>
+            <h3>Paleta Multifuncional Tô No Glow</h3>
+            <details><summary>📝 Ver Detalhes</summary><div class="detalhes-texto">2 iluminadores e 2 blushes iluminados que podem ser usados como sombra.</div></details>
+            <span class="preco">R$ 57,99</span>
+            <a href="https://wa.me/553599220136" class="btn">Encomendar</a>
+        </div>
+        <div class="produto">
+            <div class="img-box">
+                <div class="carousel-container carousel-auto" data-index="0">
+                    <img src="https://i.postimg.cc/Mn0pPVhJ/77621633-aafc-4748-991b-b65a0181a970-qdb-86973-meninas-superpoderosas-paleta-03.png">
+                    <img src="https://i.postimg.cc/751Zs0jd/a5461afa-a0d3-4600-bcde-04b3958157e7-qdb-86973-meninas-superpoderosas-paleta-01.png">
+                </div>
+            </div>
+            <h3>Mini Paleta Meninas SuperPoderosas</h3>
+            <details><summary>📝 Ver Detalhes</summary><div class="detalhes-texto">Inspirada nos vilões Ele e Macaco Louco. Sombras mate e cintilantes.</div></details>
+            <span class="preco">R$ 64,90</span>
+            <a href="https://wa.me/553599220136" class="btn">Encomendar</a>
+        </div>
+        <div class="produto">
+            <div class="img-box">
+                <div class="carousel-container carousel-auto" data-index="0">
+                    <img src="https://i.postimg.cc/1gWYs7Lx/Captura-de-tela-2026-01-03-171858.png">
+                    <img src="https://i.postimg.cc/cKD50kVy/eeeee.png">
+                </div>
+            </div>
+            <h3>Lápis Olhos Esfumador Pretô Qbd</h3>
+            <details><summary>📝 Ver Detalhes</summary><div class="detalhes-texto">Preto intenso com esponja. Resistente a água.</div></details>
+            <span class="preco">R$ 40,00</span>
+            <a href="https://wa.me/553599220136" class="btn">Encomendar</a>
+        </div>
+        <div class="produto">
+            <div class="img-box">
+                <div class="carousel-container carousel-auto" data-index="0">
+                    <img src="https://i.postimg.cc/6TW3sf78/download.jpg">
+                    <img src="https://i.postimg.cc/xqfCr3kk/download-(1).jpg">
+                </div>
+            </div>
+            <h3>Glitter Multifuncional Vermelho</h3>
+            <details><summary>📝 Ver Detalhes</summary><div class="detalhes-texto">Glitter fino e intenso, perfeito para olhos, rosto ou corpo. Alta fixação e brilho impactante.</div></details>
+            <span class="preco">Consulte Valor</span>
+            <a href="https://wa.me/553599220136" class="btn">Encomendar</a>
+        </div>
+    </div>
+
+    <span class="categoria-titulo">💄 Batons</span>
+    <div class="produtos">
+        <div class="produto">
+            <div class="img-box">
+                <div class="carousel-container carousel-auto" data-index="0">
+                    <img src="https://i.postimg.cc/NypTnWZC/137cde75-7710-47c6-a677-3f69a4efbcb8-quem-disse-berenice-finerrimo-cor-malva-to-belissima-batom-liqu.jpg">
+                    <img src="https://i.postimg.cc/GBqYfZ67/7f40e9b3-4df0-4308-8ac7-019b64be8437-quem-disse-berenice-finerrimo-cor-malva-to-belissima-batom-liqu.jpg">
+                    <img src="https://i.postimg.cc/Z9V3Q1Xg/ae61e308-653b-4127-b4de-cf7d02057185-quem-disse-berenice-finerrimo-cor-malva-to-belissima-batom-liqu.jpg">
+                    <img src="https://i.postimg.cc/rdQWHv7Y/f9dfd3d3-228d-45c1-a8da-f46a54acd045-quem-disse-berenice-finerrimo-cor-malva-to-belissima-batom-liqu.jpg">
+                </div>
+            </div>
+            <h3>Batom Líquido Malva "Tô Belíssima"</h3>
+            <details><summary>📝 Ver Detalhes</summary><div class="detalhes-texto">Seca em 30s. Efeito mate finérrimo enriquecido com vitaminas.</div></details>
+            <span class="preco">R$ 58,90</span>
+            <a href="https://wa.me/553599220136" class="btn">Encomendar</a>
+        </div>
+        <div class="produto">
+            <div class="img-box"><img src="https://i.postimg.cc/1gPD4T7X/marronito.png"></div>
+            <h3>Combo Batom Mate Marronterra</h3>
+            <details><summary>📝 Ver Detalhes</summary><div class="detalhes-texto">2 unidades. Alta cobertura, efeito mate e FPS 12.</div></details>
+            <span class="preco">R$ 52,90</span>
+            <a href="https://wa.me/553599220136" class="btn">Encomendar</a>
+        </div>
+        <div class="produto">
+            <div class="img-box">
+                <img src="https://i.postimg.cc/tZsQ6rYp/image.jpg" alt="Batom Qbd Hid Douralexo">
+            </div>
+            <h3>Batom Qbd Hid Douralexo</h3>
+            <details><summary>📝 Ver Detalhes</summary><div class="detalhes-texto">Batom líquido hidratante com acabamento metálico dourado intenso. Alta pigmentação, conforto nos lábios e longa duração.</div></details>
+            <span class="preco">R$ 52,90</span>
+            <a href="https://wa.me/553599220136" class="btn">Encomendar</a>
+        </div>
+
+        <!-- PRODUTO CORRIGIDO: BATOM MALVALEXO -->
+        <div class="produto">
+            <div class="img-box">
+                <img src="https://i.postimg.cc/gX2cTqjw/Whats_App_Image_2026_01_03_at_11_59_04.jpg" alt="Batom Malvalexo">
+            </div>
+            <h3>Batom Malvalexo</h3>
+            <details><summary>📝 Ver Detalhes</summary><div class="detalhes-texto">Batom em bala com tom malva sofisticado e acabamento cremoso aveludado. Hidratação intensa, cor vibrante e conforto o dia todo.</div></details>
+            <span class="preco">R$ 52,90</span>
+            <a href="https://wa.me/553599220136" class="btn">Encomendar</a>
+        </div>
+        <!-- FIM DO PRODUTO CORRIGIDO -->
+
+    </div>
+
+    <span class="categoria-titulo">🌿 Rosto & Cuidado</span>
+    <div class="produtos">
+        <div class="produto">
+            <div class="img-box">
+                <div class="carousel-container carousel-auto" data-index="0">
+                    <img src="https://i.postimg.cc/yJYX5ZzG/105e7c82-11cb-43f2-b593-9f96f9b8fe12-bot-59875-botik-cica-pantenol-ceramidas-agua-micelar-01.png">
+                    <img src="https://i.postimg.cc/KKqry8ZJ/227d585b-72a8-4621-8fd3-c562bcec64d2-bot-59875-botik-cica-pantenol-ceramidas-agua-micelar-02.png">
+                    <img src="https://i.postimg.cc/PL3zk5t4/3fff3758-0b39-4d7e-adda-81eee6d3196b-bot-59875-botik-cica-pantenol-ceramidas-agua-micelar-04.png">
+                    <img src="https://i.postimg.cc/948tjQWb/c55a13ef-0288-479f-8b06-e7ece960b6fb-bot-59875-botik-cica-pantenol-ceramidas-agua-micelar-02-1.png">
+                </div>
+            </div>
+            <h3>Água Micelar Reparadora Botik</h3>
+            <details><summary>📝 Ver Detalhes</summary><div class="detalhes-texto">Cica Pantenol e Ceramidas. Repara e acalma peles sensíveis. Hipoalergênico.</div></details>
+            <span class="preco">R$ 85,00</span>
+            <a href="https://wa.me/553599220136" class="btn">Encomendar</a>
+        </div>
+        <div class="produto">
+            <div class="img-box"><img src="https://i.postimg.cc/6TCPkqbG/posolto.png"></div>
+            <h3>Pó Solto Translúcido “Tô no Glow”</h3>
+            <details><summary>📝 Ver Detalhes</summary><div class="detalhes-texto">Pérolas de brilho e textura ultrafina. Não estoura no flash.</div></details>
+            <span class="preco">Consulte Valor</span>
+            <a href="https://wa.me/553599220136" class="btn">Encomendar</a>
+        </div>
+        <div class="produto">
+            <div class="img-box"><img src="https://i.postimg.cc/LqmkXXND/baseglam.png"></div>
+            <h3>Base Líquida Glam Skin Perfection</h3>
+            <details><summary>📝 Ver Detalhes</summary><div class="detalhes-texto">Ácido Hialurônico e tecnologia 3X Protect. Alta cobertura profissional.</div></details>
+            <span class="preco">R$ 80,00</span>
+            <a href="https://wa.me/553599220136" class="btn">Encomendar</a>
+        </div>
+    </div>
+
+    <div class="secao-pix">
+        <h2>Pagamento Pix</h2>
+        <div class="pix-chave" onclick="navigator.clipboard.writeText('64.199.973/0001-84'); alert('Chave Copiada!')">64.199.973/0001-84</div>
+    </div>
+</section>
+
+<footer>
+    <p><strong>Aria’s Brand • Luxury Makeup</strong></p>
+    <p>CNPJ: 64.199.973/0001-84</p>
+</footer>
+
+<script>
+    function startCarousels() {
+        const carousels = document.querySelectorAll('.carousel-auto');
+        carousels.forEach(carousel => {
+            const images = carousel.getElementsByTagName('img');
+            const total = images.length;
+            if(total > 1) {
+                setInterval(() => {
+                    let currentIndex = parseInt(carousel.getAttribute('data-index')) || 0;
+                    currentIndex = (currentIndex + 1) % total;
+                    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    carousel.setAttribute('data-index', currentIndex);
+                }, 3000);
+            }
+        });
+    }
+    window.onload = startCarousels;
+</script>
+</body>
+</html>
